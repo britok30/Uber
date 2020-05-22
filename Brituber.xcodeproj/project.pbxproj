@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133B8A3D963CD7C25B09FDCB /* Pods_Brituber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211C6802A71C295045AFC777 /* Pods_Brituber.framework */; };
 		B02314EE24764572003E7A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02314ED24764572003E7A1B /* AppDelegate.swift */; };
 		B02314F024764572003E7A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02314EF24764572003E7A1B /* SceneDelegate.swift */; };
 		B02314F524764572003E7A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02314F324764572003E7A1B /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		B023150A24764FA1003E7A1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023150924764FA1003E7A1B /* Extensions.swift */; };
 		B023150C24765935003E7A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B023150B24765935003E7A1B /* Assets.xcassets */; };
 		B023150E247776F0003E7A1B /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023150D247776F0003E7A1B /* SignUpController.swift */; };
+		B023151024778E8A003E7A1B /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023150F24778E8A003E7A1B /* AuthButton.swift */; };
+		B023151224779ACB003E7A1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B023151124779ACB003E7A1B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211C6802A71C295045AFC777 /* Pods_Brituber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brituber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2711FBA65D80261CA3E6F9D8 /* Pods-Brituber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brituber.release.xcconfig"; path = "Target Support Files/Pods-Brituber/Pods-Brituber.release.xcconfig"; sourceTree = "<group>"; };
 		B02314EA24764572003E7A1B /* Brituber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brituber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02314ED24764572003E7A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B02314EF24764572003E7A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		B023150924764FA1003E7A1B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B023150B24765935003E7A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/UberTutorial/UberTutorial/Assets.xcassets; sourceTree = "<group>"; };
 		B023150D247776F0003E7A1B /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		B023150F24778E8A003E7A1B /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		B023151124779ACB003E7A1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D29A7616935B3B12FF47D17B /* Pods-Brituber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brituber.debug.xcconfig"; path = "Target Support Files/Pods-Brituber/Pods-Brituber.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133B8A3D963CD7C25B09FDCB /* Pods_Brituber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08DAAA065DC62E617C307EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D29A7616935B3B12FF47D17B /* Pods-Brituber.debug.xcconfig */,
+				2711FBA65D80261CA3E6F9D8 /* Pods-Brituber.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B02314E124764572003E7A1B = {
 			isa = PBXGroup;
 			children = (
 				B02314EC24764572003E7A1B /* Brituber */,
 				B02314EB24764572003E7A1B /* Products */,
+				08DAAA065DC62E617C307EC5 /* Pods */,
+				F2E21CDEAA48D75E61CC61F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +91,7 @@
 				B02314F324764572003E7A1B /* Main.storyboard */,
 				B023150B24765935003E7A1B /* Assets.xcassets */,
 				B02314F824764574003E7A1B /* LaunchScreen.storyboard */,
+				B023151124779ACB003E7A1B /* GoogleService-Info.plist */,
 				B02314FB24764574003E7A1B /* Info.plist */,
 			);
 			path = Brituber;
@@ -95,6 +117,7 @@
 		B0231503247645D4003E7A1B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B023150F24778E8A003E7A1B /* AuthButton.swift */,
 			);
 			name = View;
 			path = "New Group1/View";
@@ -115,6 +138,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F2E21CDEAA48D75E61CC61F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211C6802A71C295045AFC777 /* Pods_Brituber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B02314FE24764574003E7A1B /* Build configuration list for PBXNativeTarget "Brituber" */;
 			buildPhases = (
+				33DD5FEC308510877093D590 /* [CP] Check Pods Manifest.lock */,
 				B02314E624764572003E7A1B /* Sources */,
 				B02314E724764572003E7A1B /* Frameworks */,
 				B02314E824764572003E7A1B /* Resources */,
+				CB41A23C4A8A13E8E8B9C905 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B02314FA24764574003E7A1B /* LaunchScreen.storyboard in Resources */,
+				B023151224779ACB003E7A1B /* GoogleService-Info.plist in Resources */,
 				B023150C24765935003E7A1B /* Assets.xcassets in Resources */,
 				B02314F524764572003E7A1B /* Main.storyboard in Resources */,
 			);
@@ -181,12 +215,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33DD5FEC308510877093D590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brituber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB41A23C4A8A13E8E8B9C905 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brituber/Pods-Brituber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brituber/Pods-Brituber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brituber/Pods-Brituber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B02314E624764572003E7A1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B023150E247776F0003E7A1B /* SignUpController.swift in Sources */,
+				B023151024778E8A003E7A1B /* AuthButton.swift in Sources */,
 				B02314EE24764572003E7A1B /* AppDelegate.swift in Sources */,
 				B0231508247647B3003E7A1B /* LoginController.swift in Sources */,
 				B02314F024764572003E7A1B /* SceneDelegate.swift in Sources */,
@@ -332,6 +409,7 @@
 		};
 		B02314FF24764574003E7A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29A7616935B3B12FF47D17B /* Pods-Brituber.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +428,7 @@
 		};
 		B023150024764574003E7A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2711FBA65D80261CA3E6F9D8 /* Pods-Brituber.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

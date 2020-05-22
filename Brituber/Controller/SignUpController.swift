@@ -65,6 +65,28 @@ class SignUpController: UIViewController {
         return sc
     }()
     
+    private let signUpButton: AuthButton = {
+           let button = AuthButton(type: .system)
+           button.setTitle("Sign Up", for: .normal)
+           button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        return button
+    }()
+    
+    let alreadyHaveAccountButton: UIButton = {
+           let button = UIButton(type: .system)
+           
+           let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes:
+               [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
+                NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+           attributedTitle.append(NSAttributedString(string: "Login", attributes:
+            [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
+                NSAttributedString.Key.foregroundColor: UIColor.mainBlueTint]))
+           
+           button.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
+           button.setAttributedTitle(attributedTitle, for: .normal)
+           return button
+    }()
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -74,6 +96,10 @@ class SignUpController: UIViewController {
     }
     
     //MARK: - Selectors
+    
+    @objc func handleShowLogin() {
+        navigationController?.popViewController(animated: true)
+    }
     
     //MARK: - Helper Functions
     func configureUI() {
@@ -86,13 +112,18 @@ class SignUpController: UIViewController {
           let stack = UIStackView(arrangedSubviews: [emailContainerView,
                                                      fullnameContainerView,
                                                      passwordContainerView,
-                                                     accountTypeContainerView])
+                                                     accountTypeContainerView,
+                                                     signUpButton])
           stack.axis = .vertical
           stack.distribution = .fillProportionally
           stack.spacing = 24
           
           view.addSubview(stack)
           stack.anchor(top: titleLabel.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 40, paddingLeft: 16, paddingRight: 16)
+        
+          view.addSubview(alreadyHaveAccountButton)
+                   alreadyHaveAccountButton.centerX(inView: view)
+                   alreadyHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, height: 32)
           
     }
 }
