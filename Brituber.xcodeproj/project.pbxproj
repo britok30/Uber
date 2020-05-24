@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		B023150E247776F0003E7A1B /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023150D247776F0003E7A1B /* SignUpController.swift */; };
 		B023151024778E8A003E7A1B /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B023150F24778E8A003E7A1B /* AuthButton.swift */; };
 		B023151224779ACB003E7A1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B023151124779ACB003E7A1B /* GoogleService-Info.plist */; };
+		B04F2DE9247B1E1700648CCC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F2DE8247B1E1700648CCC /* HomeController.swift */; };
+		B04F2DEB247B3AE600648CCC /* LocationInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F2DEA247B3AE600648CCC /* LocationInputActivationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B023150D247776F0003E7A1B /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		B023150F24778E8A003E7A1B /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		B023151124779ACB003E7A1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B04F2DE8247B1E1700648CCC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B04F2DEA247B3AE600648CCC /* LocationInputActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputActivationView.swift; sourceTree = "<group>"; };
 		D29A7616935B3B12FF47D17B /* Pods-Brituber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brituber.debug.xcconfig"; path = "Target Support Files/Pods-Brituber/Pods-Brituber.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +60,6 @@
 				D29A7616935B3B12FF47D17B /* Pods-Brituber.debug.xcconfig */,
 				2711FBA65D80261CA3E6F9D8 /* Pods-Brituber.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +105,7 @@
 			children = (
 				B0231507247647B3003E7A1B /* LoginController.swift */,
 				B023150D247776F0003E7A1B /* SignUpController.swift */,
+				B04F2DE8247B1E1700648CCC /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B023150F24778E8A003E7A1B /* AuthButton.swift */,
+				B04F2DEA247B3AE600648CCC /* LocationInputActivationView.swift */,
 			);
 			name = View;
 			path = "New Group1/View";
@@ -264,9 +269,11 @@
 			files = (
 				B023150E247776F0003E7A1B /* SignUpController.swift in Sources */,
 				B023151024778E8A003E7A1B /* AuthButton.swift in Sources */,
+				B04F2DE9247B1E1700648CCC /* HomeController.swift in Sources */,
 				B02314EE24764572003E7A1B /* AppDelegate.swift in Sources */,
 				B0231508247647B3003E7A1B /* LoginController.swift in Sources */,
 				B02314F024764572003E7A1B /* SceneDelegate.swift in Sources */,
+				B04F2DEB247B3AE600648CCC /* LocationInputActivationView.swift in Sources */,
 				B023150A24764FA1003E7A1B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
